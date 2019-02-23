@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { NavComponent } from './nav/nav.component';
+import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'nav',
     component: NavComponent,
+  },
+  {
+    path: 'form',
+    component: FormComponent,
   },
 ];
 

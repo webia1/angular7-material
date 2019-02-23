@@ -1,0 +1,6 @@
+<form [formGroup]="myForm">
+  <input type="text"
+         formControlName="plz">
+</form>
+<hr>
+Validator: {{ myForm.controls.plz.valid }}
