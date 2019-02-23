@@ -25,6 +25,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NavComponent } from './nav/nav.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddressService } from './shared/services/address.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
@@ -53,7 +56,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatListModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [AddressService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -3,4 +3,5 @@
          formControlName="plz">
 </form>
 <hr>
-Validator: {{ myForm.controls.plz.valid }}
+Validator: {{ myForm.controls?.plz?.valid }} <br />
+Pending: {{ myForm.controls?.plz?.pending}}
